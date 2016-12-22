@@ -1,0 +1,38 @@
+<doctype html>
+<html>
+    <head></head>
+    <body>
+        <script src="./song.js"></script>
+        <script src="./standard.jWebAudio.js"></script>
+        <script>
+
+            var engine = new jWebAudio.SoundEngine();
+            var soundSource = engine.addSoundSource({
+                url: fenceSong,
+                finish: function () {
+                    console.log(JSON.stringify(dataList))
+                }
+                // loop: true
+            });
+
+            var dataList = [];
+            soundSource.load(function () {
+                soundSource.sound.play();
+                soundSource.sound.analysize(16);
+
+                var startTime = Date.now();
+                function sample() {
+                    var arr = [];
+                    for (var i = 0; i < soundSource.sound.fftData.length; i++) {
+                        arr[i] = soundSource.sound.fftData[i];
+                    }
+                    dataList.push({
+                        t: Date.now() - startTime,
+                        d: arr
+                    });
+                }
+                setInterval(sample, 250);
+            });
+        </script>
+    </body>
+</html>

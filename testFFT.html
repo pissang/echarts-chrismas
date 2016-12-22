@@ -1,0 +1,32 @@
+<doctype html>
+<html>
+    <head></head>
+    <body>
+        <button id="main">CLICK</button>
+        <script src="./song.js"></script>
+        <script src="./fft.js"></script>
+        <script src="./standard.jWebAudio.js"></script>
+        <script>
+
+            soundSource = new Audio();
+            soundSource.loop = true;
+            soundSource.src = fenceSong;
+            document.getElementById('main').onclick = function () {
+                soundSource.play();
+                setInterval(function () {
+                    var time = soundSource.currentTime * 1000;
+                    var min = Infinity;
+                    var foundFrame;
+                    for (var i = 0; i < fenceFFT.length; i++) {
+                        var frame = fenceFFT[i];
+                        if (Math.abs(frame.t - time) < min) {
+                            foundFrame = frame;
+                            min = Math.abs(frame.t - time);
+                        }
+                    }
+                    document.write(foundFrame.t + '<br />');
+                }, 250);
+            }
+        </script>
+    </body>
+</html>
