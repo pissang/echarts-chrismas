@@ -946,7 +946,7 @@ var paperHeight = {
                     symbolSize: ['80%', '20%'],
                     symbolMargin: '-38%'
                 }, {
-                    value: 8848,
+                    value: 8844,
                     symbol: 'image://' + mountainUrl,
                 }],
                 z: 10,

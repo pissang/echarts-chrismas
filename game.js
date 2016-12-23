@@ -286,7 +286,7 @@ window.game.init = function (parentNode) {
                     var shootStyle = document.getElementById('shoot-img').style;
                     var transform = gb.santa.next.domEle.style.transform;
                     shootStyle.display = 'block';
-                    shootStyle.transform = transform;
+                    shootStyle.webkitTransform = shootStyle.transform = transform;
                 },
                 onmouseup: function () {
                     if (gb.gameState !== gb.GAME_STATES.IN_GAME) {
