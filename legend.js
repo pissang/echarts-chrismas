@@ -108,9 +108,9 @@ var fakeLoadingEffect = {
             });
         }, 500);
 
-        // this.timeout2 = setTimeout(function() {
-        //     legend.render.gotoPage(1);
-        // }, 7000);
+        this.timeout2 = setTimeout(function() {
+            legend.render.gotoPage(1);
+        }, 7000);
     }
 };
 
