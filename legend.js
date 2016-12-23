@@ -667,7 +667,7 @@ var peopleHaveChrismasChart = {
                 animation: !lowQuality,
                 waveAnimation: !lowQuality,
 
-                data: [0.93, 0.88, 0.8],
+                data: [0.76, 0.70, 0.68],
                 color: ['#49d088', '#38b470', '#2aaf66'],
                 center: ['25%', '50%'],
                 waveLength: '60%',
@@ -676,7 +676,7 @@ var peopleHaveChrismasChart = {
                 label: {
                     normal: {
                         formatter: function() {
-                            return '世界\n\n93%人口'
+                            return '世界\n\n76%人口';
                         },
                         textStyle: {
                             fontSize: 22,
@@ -819,7 +819,9 @@ var childrenNeedsChart = {
                 },
                 itemStyle: {
                     normal: {
-                        color: '#46d185'
+                        color: '#46d185',
+                        shadowColor: 'rgba(0, 0, 0, 0.5)',
+                        shadowBlur: 20
                     }
                 },
                 areaStyle: {
@@ -930,7 +932,7 @@ var paperHeight = {
                     normal: {
                         show: true,
                         position: 'top',
-                        formatter: '{c} km',
+                        formatter: '{c} m',
                         textStyle: {
                             fontSize: 16,
                             color: '#e54035'
