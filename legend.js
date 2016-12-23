@@ -428,7 +428,13 @@ var santaReindeer = {
                     bottom: 0
                 },
                 xAxis: {
-                    data: ['鲁道夫', '猛冲', '舞者', '乱舞', '雌狐', '彗星', '朱庇特', '唐纳', '闪电'],
+                    data: [{
+                        value: '鲁道夫',
+                        textStyle: {
+                            color: '#ffd56e'
+                        }
+                    // }, '猛冲', '舞者', '乱舞', '雌狐', '彗星', '朱庇特', '唐纳', '闪电'],
+                    }, '鹿2', '鹿3', '鹿4', '鹿5', '鹿6', '鹿7', '鹿8', '鹿9'],
                     axisLabel: {
                         interval: 0,
                         inside: true,
@@ -457,7 +463,7 @@ var santaReindeer = {
                         }
                     },
                     data: [{
-                        symbol: 'image://data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABUCAYAAAA/MEEUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABVNJREFUeNrsnD1s00AUgF9QWRLEguqydEhWkjkRCxKZKWIjaxukTrRzO7dzqRiQKGthQmpgDVulZHZZ7YGpHiscxuKT3sH1ap/Pzv3Z8KRTk9TxOd+93/OdG9fX12BQWkmLoQJyh7lgE7KWtGEKLCfBDA32FyStx8HoYHMOTC9FvXVe7GnSNjiNabkIxuMgEFBjHF0dEqFJeUx/TprSNGk7OGojhHKguV/S5yt83U+a7yoYAuUj+puJgcjhY58nrkYpGpVC/BsbvNApmlPkIpgVJlqQEdwz2HfEaI+TGtOxfIEXroLpW7LzQdIWGqOfEh+zZiFskgGZuV4S9BUmWTKZdA8d79RlMHO8yHYOHE8hmBH6Ft9lMMTGv+D7DcGxryTPmVdKkD66mMM4X12fYi4zEvywtqSJXOZo0xiTyaAKYGLMYQicIwTEm1Uo4aCHTPjtMebXQo0jpcc3BOO0NLiJKvIDdtEZk1B6xpQIQ2x7Am3ZT9prjHIHaKI/k/Y8aU0E4jyUNDCsc6Q/hmrLFP3DBBsvhwgw4L5Lk7gT181HBgx1ts9SPiea9DJFWw4y0v6PLoflMmA66G9EaXyE5tfOCOf7LodkmSIyTQLMcfop/+tKFomVhMJGpSw5KlnkRehzKisNydsnHkYrGU0h4fg9VOQ2SVmNKWMW06pDKQImXc7P78PXrw+4TysPZTkwb9+uw4sXT2Bz8zFsbz+Cmkl5MJ8/rzOvOwVrqlqBCW+8e/hw8ef16uovrnquvKwUOPam7zg+/g7v3l3B1dVd2Nr6wWlMr8o5TJFwTWUieVxlikVVPkb2HtDgX3O+oeRxbTC7isK6KRHHOi5wPMmCZ+hv4jqDEVXcMmYYMa8vUQMDCRNtQfqUa0uQHsSMhgdFB6ZRYqnZJ7g5CaVC6I03nxuElmR9JusGLrBkCXSA2c+YiqiSXGDU9FVmvj5UX4gWHoiiZxkwM6iPjFWCicDRNS0lxIOMW0Jli8h5jbSmqxLMFGouZcEENTGnhWowdTGnM8iY7F8GTNXNKRTlMsuACQoUlS7KVIePoTKpMJiZTjAzkQNz3IwinWBidGC1MiMVYKg5LepkRqrAVE1rcs1IFRiqNVFdtEUlGKI1b/6XBOni1wnOHcXnI97+0JIzJqn9F4nj1mRO1tC0vZjM1X4A9XPDWYXgKZNsknU8T3O+sws5874NjfuuR9hEQm6v0D2ZRSFGCINfj0POdyLx3R0Q3DnQCYZuJxSp/h73g3rYupC+2JHuP5jnjLjM/S++f2NgAP1NVzBtkbcplcC5B+XWB8uYFNHYIxPONy1SiapzGXMpu2j6SMIZP4WMZSu6weRloLrlvUQKMbABJir5P9UphGhJbsc1MCb3FcwE19V0zZQ8S2YbyWToJsFEZTJQDTLHoMCaV880mMCCT8nTzikzI5CpvbrBxBYikcjBsuF/xgxWx4YpRQ5oTZ/TFtasIC0JNQkm5Ezr0hCUAWMqPBg683hra7VJMD8tac+QGZgo5drCNAdsAsylRVPyGDOaCBJAK2BiS0kdqy1pSR5bZd/yMybAhIIoZQrMN0HfdOXGDT9jI/M19byYnsDpQkZ0GtgyJZNaM2T8Wt6CSp/3MybABFyn9L3OZ9+14O8klczCA9+GxhQq9xXmLkQWILeOJ0YTb9LrMgmma9DHDBhNkDXdkDVBE2C8jPCpc4tgu0Te5LPlgwkwaxlgOhr9i1fCjwXMQA5XDIDJynwHoOf5vvSJjLOCGsMeawQM6XAXAcVMdGrC30dYqu5vmXMShz0xAYYvBdqc1ri0ju/PADYMPxq7MvJbgAEApbduLs7fh4AAAAAASUVORK5CYII=',
+                        symbol: 'image://data:image/png;base64,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',
                         value: 0
                     },0,0,0,0,0,0,0,0],
 
@@ -1095,7 +1101,7 @@ var giftNumber = {
                 label: {
                     normal: {
                         show: true,
-                        formatter: '16 亿',
+                        formatter: '1.92 亿',
                         textStyle: {
                             color: '#fff',
                             fontSize: 20,
@@ -1402,10 +1408,10 @@ var giftFrom = {
                         value: 7,
                         name: '其他'
                     }, {
-                        value: 12,
+                        value: 4,
                         name: '自己制作'
                     }, {
-                        value: 38,
+                        value: 35,
                         name: '线下购买'
                     }, {
                         value: 53,
@@ -1467,13 +1473,13 @@ var giftPrice = {
         var dom = legend.getComponentsByName('gift-price')[0].surfaceElement;
         var chart = this.chart = echarts.init(dom);
 
-        var percentage = [0.58, 0.24, 0.16, 0.02];
+        var percentage = [0.58, 0.22, 0.16, 0.04];
         var radius = [0.6];
         for (var i = 1; i < percentage.length; ++i) {
             radius.push(radius[0] / Math.sqrt(percentage[0] / percentage[i]));
         }
         var colors = ['#ec5845', '#f28a7d', '#fbdcd8', '#fff'];
-        var labels = ['≥500元：2%', '≥200元：16%', '≥100元：24%', '其他：58%'];
+        var labels = ['≥500元：4%', '≥200元：16%', '≥100元：22%', '其他：58%'];
         var top = 0.5;
 
         var series = [];
@@ -1490,7 +1496,7 @@ var giftPrice = {
                     }
                 },
                 color: [colors[i]],
-                center: ['30%', (top + (-radius[i] + radius[0]) / 2) * 100 + '%'],
+                center: ['35%', (top + (-radius[i] + radius[0]) / 2) * 100 + '%'],
                 data: [{
                     value: 1,
                     itemStyle: {
