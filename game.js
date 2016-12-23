@@ -145,25 +145,10 @@ window.game.init = function (parentNode) {
         grid: {
             top: 50,
             bottom: 50,
-            left: 50,
-            right: 50
+            left: '5%',
+            right: '5%'
         },
         xAxis: {
-            type: 'value',
-            min: 0,
-            max: 1,
-            data: [''],
-            show: false
-        },
-        yAxis: {
-            type: 'value',
-            min: 0,
-            max: 1,
-            show: false
-        },
-        singleAxis: [{
-            top: '20%',
-            bottom: 50,
             type: 'value',
             min: -180,
             max: 180,
@@ -187,10 +172,15 @@ window.game.init = function (parentNode) {
             },
             splitLine: {
                 lineStyle: {
-                    color: 'rgba(150, 150, 150, 0.4)'
+                    color: 'rgba(150, 150, 150, 0.2)',
+                    type: 'dashed'
                 }
             }
-        }]
+        },
+        yAxis: {
+            type: 'value',
+            show: false
+        }
     };
     gb.mapChart = echarts.init(document.getElementById('map-chart'), null, {
         // devicePixelRatio: 1

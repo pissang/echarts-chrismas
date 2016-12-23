@@ -955,7 +955,9 @@ var paperHeight = {
                     data: [{
                         yAxis: 6700
                     }]
-                }
+                },
+
+                animationEasing: 'elasticOut'
             }, {
                 name: 'shadow',
                 type: 'pictorialBar',
@@ -967,7 +969,9 @@ var paperHeight = {
                     }
                 },
                 symbolSize: ['120%', 30],
-                data: [1, 1]
+                data: [1, 1],
+
+                animationEasing: 'elasticOut'
             }]
         });
     }
@@ -1027,7 +1031,9 @@ var savedTree = {
                 symbol: 'image://' + treeUrl,
                 symbolSize: [30, 50],
                 symbolRepeat: true,
-                data: data
+                data: data,
+
+                animationEasing: 'elasticOut'
             }]
         });
     }
@@ -1072,7 +1078,9 @@ var giftNumber = {
                 symbol: 'image://' + childUrl,
                 symbolRepeat: true,
                 symbolSize: 40,
-                data: [100, 100, 100]
+                data: [100, 100, 100],
+
+                animationEasing: 'elasticOut'
             }, {
                 name: 'glyph',
                 type: 'pictorialBar',
@@ -1097,7 +1105,9 @@ var giftNumber = {
                     }
                 },
                 data: ['-', 100, '-'],
-                z: 100
+                z: 100,
+
+                animationEasing: 'elasticOut'
             }]
         })
     }
@@ -1148,7 +1158,9 @@ var elfinNumber = {
                 symbol: 'image://' + elfinUrl,
                 symbolRepeat: true,
                 symbolSize: 40,
-                data: [100, 100, 100]
+                data: [100, 100, 100],
+
+                animationEasing: 'elasticOut'
             }, {
                 name: 'glyph',
                 type: 'pictorialBar',
@@ -1173,7 +1185,9 @@ var elfinNumber = {
                     }
                 },
                 data: ['-', 100, '-'],
-                z: 100
+                z: 100,
+
+                animationEasing: 'elasticOut'
             }]
         });
     }
@@ -1225,7 +1239,9 @@ var madeByYiWu = {
                 symbolRepeat: true,
                 symbolSize: 30,
                 symbolMargin: 10,
-                data: [100, 100]
+                data: [100, 100],
+
+                animationEasing: 'elasticOut'
             }, {
                 name: 'yiwu',
                 type: 'pictorialBar',
@@ -1235,7 +1251,9 @@ var madeByYiWu = {
                 symbolSize: 30,
                 symbolMargin: 10,
                 data: [60, 60],
-                z: 10
+                z: 10,
+
+                animationEasing: 'elasticOut'
             }]
 
         });
