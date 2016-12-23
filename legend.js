@@ -463,6 +463,7 @@ var santaReindeer = {
                         }
                     },
                     data: [{
+                        // symbolSize: [40, 50],
                         symbol: 'image://data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABTCAYAAAAiNXGsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABZtJREFUeNrsXL1u40YQHhNGqgBWddcEODmlGhvXJI1hprvOzBOcrj8c5S7d0UV68glM12noJzgK9wCRkIuAdHJ5aUIDSZMUzi53SS7/xCXF/SFPAywoiaaW+mbmm59dGp6enkDq+P2dJX3ODsMALBvbBHliovmmuU829hw0EwPd1Dk6TktnNvZE0JwuGk7hs3P9gAGYVICCNShGizNvS+eYMgqY6AgM5EDY2E78fua5Aud1qOVgsdDY6gbMESYaBAa+sRXV3AqBshA+88b2KSBmDNTMC3W0GKy9K+rrVokcxQgG5j0al1QpWrrSigHoPOUBkZJZyAN6HekGzHHhZh3J8691tJYkXFtKogKJRmdohHoCAxApCpcWPWoNzKJnS+AFZimFzzoBM/NW1KT7Kg0WNJveBd6URkEfNJUkKt2VEr3yj2kDWpPV+DHxzjztgVnEYRPg9Q5tm5z5jdlgLQ7NXRagsRg0TEfU5x9jMtwFTrOL1CdsG9ulSd21bpluncUA5RqTkvGvccqet5CwoiquqoHuYqA3NuaaMHXDjY2/30bjRnAd1mOtVI4qYUrIAPdoBLlR9cMIB31A45QCfEvPLKkVPdDiNIQBSBmYPBe8r8hUp5VlA7GOc+pGl8yZR1pquDqm/l2AwZbzV811HrWeLXU9i7EQVpbxuQEB0gxM1hp4vcf3Xw+BT3aTb12yRlyha4How0DFaGgNRJQ3vJYA3ccEPEAX4nMlfs7JgzLzLBi4GC3+tpz0rf5EzvIbOTKfwgjkuPOVGBD/E32Djj99B/DqWxiLGJ2v/OUPgIsLgOfPyfvbT7wF5OiAybvIP/8BfPwI8Pkzef/3v2yf5QsCphhhzp7lz198k7x6EddJX5grLdNXPyM3enVKAMLHty/5q/ARku82rYO+/goR7vfdejIjtBjeUHyi4w4GHYCBuJqWu71EUeabZcAtL4j7MCEFNQE2oo2xUQETQr7fso88MIAR8JLoR0qQZO/OlL6uy5Gq7ueRUUQ2B+dyTRdgHCg3sIYkayBNM7/vzDcceMDBLdvbeOvLjvWv9hZDrCaKI8/w5TF204r2SNdaKYRxCFbuvM8iMoDxiHkAplom/QFDfPIeRizGHteOwWqWB2DqypaazQXdwnUWtjE4V4MN1TNvIsJisPgDtpZAFMdgEg5ovXMApsZPh+hGwoHxofsyrpbW0g8wJKdxD8DUu9NwuKbBjfoDhljNfOhJnQiLSR6a8A4lQTU4OIu8G2LRKBYYAg52qR8URCoPzX3EoZizxp3rQoDJ3EpWpMJAnDJP5fEsD/tNzzwYAm/Y5bCaH6l1vaH8tOb8bhwBbygg81znnwSCm0araVDcfkVkc5GJJ7d3WNZRxTVYkybkl062zOBbAuFb5qndPCkaGPwDP7QCpr+5ixu56+RN1VKKIdj/o33ziT1zK5ODjF3ZHAMNy7Dil2gxOCRK7mrDnlRFKQPUyVbiXH7b3EYlMPL2AJdro8YkVDYwbPieSp6bLXIXBfcyVQCzlMor9fIivR9CzM4uJcm2GDXA5B9I85nAkChNCfmuFBEu1LhKUEHKZyqAiTRwpXlKuvmdDUHKe4VtceO3mOwB1qK1JElgUEXAci1GzVP5izQiVrc0lQFTBGOtyI38hhznUi4wZSuJJLrRHLKdX7uy33v695bKzDdUYC3rhrqt5E6ygFlLt5g86bqcypIOjIqQPWfKkIDD3ddA+sFTVa4USQYm4HxoNWc1coHBfQ8ZW+VJfyWpjZyW3GepsBj26TeR/0bS7JA7JQq7wm1RWcBMCsnWWnDboT3oBMCkNWHJAiYB4YTWJBFLdIIsBlfO1x2TUfdYEjAu1WII2b+uTAjS6X22mdcV8DAJ8WKXT+rJ8YmpX/R5HJlkypgHHfnAEPfxGe2aoKH8L8AAWMS4r/E5f/EAAAAASUVORK5CYII=',
                         value: 0
                     },0,0,0,0,0,0,0,0],
@@ -1479,7 +1480,7 @@ var giftPrice = {
             radius.push(radius[0] / Math.sqrt(percentage[0] / percentage[i]));
         }
         var colors = ['#ec5845', '#f28a7d', '#fbdcd8', '#fff'];
-        var labels = ['≥500元：4%', '≥200元：16%', '≥100元：22%', '其他：58%'];
+        var labels = ['≥500元：4%', '≥200元：16%', '≥100元：22%', '<100元：58%'];
         var top = 0.5;
 
         var series = [];
