@@ -1105,7 +1105,7 @@ var giftNumber = {
                         formatter: '1.92 亿',
                         textStyle: {
                             color: '#fff',
-                            fontSize: 20,
+                            fontSize: 24,
                             fontFamily: 'Arial',
                             fontWeight: 'bold'
                         }
@@ -1185,7 +1185,7 @@ var elfinNumber = {
                         formatter: '3000 个',
                         textStyle: {
                             color: '#fff',
-                            fontSize: 20,
+                            fontSize: 24,
                             fontFamily: 'Arial',
                             fontWeight: 'bold'
                         }
