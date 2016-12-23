@@ -269,13 +269,13 @@ var fenceWave = {
             startUpdateChart(fenceFFT);
 
             var oldVolume;
-            playButton.addEventListener('click', function () {
+            playButton.addEventListener('touchstart', function () {
                 soundSource.play();
                 // if (oldVolume) {
                 //     soundSource.volume = oldVolume;
                 // }
             });
-            stopButton.addEventListener('click', function () {
+            stopButton.addEventListener('touchstart', function () {
                 soundSource.pause();
                 // oldVolume = soundSource.volume;
                 // soundSource.volume = 0;
